@@ -105,27 +105,59 @@ footer {
 
 .color-ref p {
   display: inline-block;
-  padding: 15px;
+  padding: 0 15px 15px;
+  color: #4c516d;
 }
 
-.past-color {
+.past-ref {
   display: inline;
-  color: lightgray;
+  color: rgb(216, 216, 216);
+}
+
+.current-ref {
+  display: inline;
+  color: #ff908a;
 }
 
 .current-color {
+  background-color: #ff7d76;
+  color: white;
+  border: white solid 1px;
+}
+
+.current-color-2 {
+  background-color: #ffcfcc;
+  color: #4c516d;
+  border: white solid 1px;
+}
+
+.next-ref {
   display: inline;
-  color: #ff6961;
+  color: #a8e9a8;
 }
 
 .next-color {
-  display: inline;
-  color: #77dd77;
+  background-color: #77cc77;
+  color: white;
+  border: white solid 1px;
+}
+
+.next-color-2 {
+  background-color: #cff3cf;
+  color: #4c516d;
+  border: white solid 1px;
+}
+
+.input-group {
+  display: flex;
+  text-align: right;
+}
+
+.input-group-text {
+  width: 130px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* below are testing area*/
-.col,
-.col-1 {
-  background-color: lightgray;
-  border: white solid 5px;
-}
