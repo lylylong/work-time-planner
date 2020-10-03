@@ -139,13 +139,13 @@ footer {
 .next-color {
   background-color: #77cc77;
   color: white;
-  border: white solid 1px;
+  border: white solid 2px;
 }
 
 .next-color-2 {
   background-color: #cff3cf;
   color: #4c516d;
-  border: white solid 1px;
+  border: white solid 2px;
 }
 
 .input-group {
@@ -160,4 +160,24 @@ footer {
   padding: 20px 0;
 }
 
-/* below are testing area*/
+.btn,
+.input-group-text {
+  border-radius: 0.5rem;
+}
+
+/* this will remove the button focus outline!!! */
+.btn:hover {
+  background-color: royalblue;
+  border: none;
+}
+
+#remove-plan:hover {
+  background-color: orange;
+  border: none;
+}
+
+.btn:focus {
+  border-color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
