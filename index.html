@@ -10,10 +10,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
@@ -30,7 +26,10 @@
     <header class="jumbotron">
       <h1 class="display-3">Time Planner</h1>
       <p class="lead">Your daily work time planner.</p>
-      <p id="currentDay" class="lead"></p>
+      <div class="time-box">
+        <p id="currentDay" class="lead"></p>
+        <p id="digital-clock" class="digital-clock">00:00:00</p>
+      </div>
     </header>
     <div class="color-ref">
       <p>Past Hours <span class="past-ref">⬤</span></p>
@@ -56,7 +55,7 @@
         <div class="input-group-append">
           <button
             id="save-plan"
-            class="btn btn-outline-secondary btn-ripple"
+            class="btn btn-outline-secondary"
             type="button"
           >
             Save Plan
@@ -327,10 +326,6 @@
 
     <!-- add the js file here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
     <script src="./Develop/js/main.js"></script>
   </body>
