@@ -38,6 +38,7 @@ $(document).ready(function () {
         thatTime = $(this).parents().parents().attr("id");
         if (thatTime < currentHour) {
           $(this).removeClass("current-color");
+          $(this).removeClass("next-color");
           $(this).addClass("past-color");
         } else if (thatTime == currentHour) {
           $(this).removeClass("next-color");
@@ -52,6 +53,7 @@ $(document).ready(function () {
       thatTime = $(this).parents().attr("id");
       if (thatTime < currentHour) {
         $(this).removeClass("current-color-2");
+        $(this).removeClass("next-color-2");
         $(this).addClass("past-color-2");
       } else if (thatTime == currentHour) {
         $(this).removeClass("next-color-2");

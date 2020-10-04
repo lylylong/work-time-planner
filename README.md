@@ -21,11 +21,11 @@ The application has a clean user interface and provides a simple user experience
 
 ## Website
 
-https
+https://lylylong.github.io/work-time-planner/
 
 ## GitHub URL
 
-http
+https://github.com/lylylong/work-time-planner.git
 
 ## Screenshots
 
@@ -46,5 +46,5 @@ Web Browsers.​
 
 ## Contributors
 
-Xandromus
-Yin Long
+- Xandromus
+- Yin Long
