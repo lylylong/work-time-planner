@@ -30,6 +30,7 @@ https://github.com/lylylong/work-time-planner.git
 ## Screenshots
 
 This gif demonstrates the user experience:
+![Final Gif](https://user-images.githubusercontent.com/70302749/95025635-438b7100-0659-11eb-9d26-ed1fae8d3bcf.gif)
 
 ## Built With
 
