@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -18,7 +20,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Develop/css/style.css" />
+    <link rel="stylesheet" href="./Testing/css/style.css" />
     <title>Time Planner</title>
   </head>
 
@@ -31,13 +33,57 @@
         <p id="digital-clock" class="digital-clock">00:00:00</p>
       </div>
     </header>
-    <div class="color-ref">
-      <p>Past&ensp;<span class="past-ref">⬤</span></p>
-      <p>Current&ensp;<span class="current-ref">⬤</span></p>
-      <p>Next&ensp;<span class="next-ref">⬤</span></p>
+    <div class="color-ref mt-3">
+      <p>Past Hours <span class="past-ref">⬤</span></p>
+      <p>Current Hour <span class="current-ref">⬤</span></p>
+      <p>Next Hours <span class="next-ref">⬤</span></p>
     </div>
     <!-- Timeblocks go here -->
     <div class="container">
+      <!-- test -->
+      <form class="row g-3">
+        <div class="col-auto">
+          <label for="staticEmail2" class="visually-hidden">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        </div>
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+        </div>
+      </form>
+
+
+      <div class="mb-3 row">
+        <label for="formGroupExampleInput" class="form-label"
+          >9 AM - 10 AM</label
+        >
+        <input
+          class="form-control col-auto"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></input>
+
+        <button
+          id="save-plan"
+          class="btn btn-outline-secondary mt-2 col-auto"
+          type="button"
+        >
+          Save Plan
+        </button>
+        <button
+          id="remove-plan"
+          class="btn btn-outline-secondary mt-2 mx-2 col-auto"
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+
+      <!-- test -->
+
       <!-- 9 - 10 -->
       <div id="9" class="input-group mb-2">
         <div class="input-group-prepend">
@@ -71,7 +117,7 @@
       </div>
       <!-- 10 - 11 -->
       <div id="10" class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="time-label">
           <label class="input-group-text" for="inputGroupSelect01"
             >10AM - 11AM</label
           >
@@ -102,7 +148,7 @@
       </div>
       <!-- 11 - 12 -->
       <div id="11" class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="time-label">
           <label class="input-group-text" for="inputGroupSelect01"
             >11AM - 12PM</label
           >
@@ -133,7 +179,7 @@
       </div>
       <!-- 12 - 1 -->
       <div id="12" class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="time-label">
           <label class="input-group-text" for="inputGroupSelect01"
             >12PM - 1PM</label
           >
@@ -164,7 +210,7 @@
       </div>
       <!-- 1 - 2 -->
       <div id="13" class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="time-label">
           <label class="input-group-text" for="inputGroupSelect01"
             >1PM - 2PM</label
           >
@@ -195,7 +241,7 @@
       </div>
       <!-- 2 - 3 -->
       <div id="14" class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="time-label">
           <label class="input-group-text" for="inputGroupSelect01"
             >2PM - 3PM</label
           >
@@ -226,7 +272,7 @@
       </div>
       <!-- 3 - 4 -->
       <div id="15" class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="time-label">
           <label class="input-group-text" for="inputGroupSelect01"
             >3PM - 4PM</label
           >
@@ -257,7 +303,7 @@
       </div>
       <!-- 4 - 5 -->
       <div id="16" class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="time-label">
           <label class="input-group-text" for="inputGroupSelect01"
             >4PM - 5PM</label
           >
@@ -288,7 +334,7 @@
       </div>
       <!-- 5 - 6 -->
       <div id="17" class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="time-label">
           <label class="input-group-text" for="inputGroupSelect01"
             >5PM - 6PM</label
           >
@@ -326,7 +372,12 @@
 
     <!-- add the js file here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
-    <script src="./Develop/js/main.js"></script>
+    <script src="./Testing/js/main.js"></script>
   </body>
 </html>
