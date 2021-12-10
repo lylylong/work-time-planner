@@ -127,3 +127,14 @@ $(document).ready(function () {
     $(".digital-clock").text(h + ":" + m + " " + aOrP);
   }
 });
+
+// close
+const targetDiv = document.getElementById("sticky-botton");
+const closebtn = document.getElementById("close-this-div");
+closebtn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};

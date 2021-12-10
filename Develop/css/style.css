@@ -241,3 +241,10 @@ footer {
     font-size: 1rem;
   }
 }
+
+.sticky-botton {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  justify-content: center;
+}
