@@ -138,3 +138,12 @@ closebtn.onclick = function () {
     targetDiv.style.display = "block";
   }
 };
+
+$(function () {
+  $('[data-toggle="popover"]').popover();
+});
+$(function () {
+  $(".example-popover").popover({
+    container: "body",
+  });
+});
