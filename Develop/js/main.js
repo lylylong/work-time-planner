@@ -130,7 +130,21 @@ $(document).ready(function () {
 
 // close
 const targetDiv = document.getElementById("sticky-botton");
-const closebtn = document.getElementById("close-this-div");
+const closebtn = document.getElementById(
+  "close-this-div" && "close-this-div-2"
+);
+const dismissbtn = document.getElementById("close-this-div-3");
+
+let savedResult = localStorage.getItem("ifDismiss") || [];
+// console.log(savedResult);
+if (savedResult && savedResult == "true") {
+  // console.log("should not see install msg");
+  targetDiv.style.display = "none";
+}
+
+let ifDismiss = "ifDismiss";
+let savedIfDismiss = false;
+
 closebtn.onclick = function () {
   if (targetDiv.style.display !== "none") {
     targetDiv.style.display = "none";
@@ -138,12 +152,21 @@ closebtn.onclick = function () {
     targetDiv.style.display = "block";
   }
 };
-
-$(function () {
-  $('[data-toggle="popover"]').popover();
-});
-$(function () {
-  $(".example-popover").popover({
-    container: "body",
-  });
-});
+dismissbtn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    savedIfDismiss = true;
+    localStorage.setItem(ifDismiss, savedIfDismiss);
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+//bootstrap popover
+// $(function () {
+//   $('[data-toggle="popover"]').popover();
+// });
+// $(function () {
+//   $(".example-popover").popover({
+//     container: "body",
+//   });
+// });
